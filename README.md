@@ -3,7 +3,7 @@ Based on the Mr. Robot show, can you root this box?
 Can you root this Mr. Robot styled machine? This is a virtual machine meant for beginners/intermediate users. There are 3 hidden keys located on the machine, can you find them?
 
 
-# MRROBOT
+
 ## First I enumerated the ip 
 `` nmap -sV -A ip``
 
@@ -17,7 +17,7 @@ In between I gone through all the instruction which was available on the website
 
 Found some directory :
 
-![ alt text ]("/home/kalg/Screenshots/result.png")
+![ alt text ](./dirsearch_result.png)
 
 ### gone through everyone:
 Found a base64 text in /license directory 
@@ -41,6 +41,7 @@ I got the kernal version and serached for exploit then I found a kernal vulnerab
 Now transfered the linPeas.sh file in /tmp and run it.
 
 Found some command for which suid was set one of them was nmap .
+![alt text](./suid_file.png)
  Then run
   ``` /usr/local/bin/nmap --interactive ```
 
